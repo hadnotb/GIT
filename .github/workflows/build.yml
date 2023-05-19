@@ -20,7 +20,7 @@ jobs:
           php-version: '8.2'
           extensions: imagick, swoole
       - name: install composer dep
-        uses: ramsey/composer-install@v2
+        run:  composer install --no-progress --prefer-dist
       - name: display variable
         run: echo ${{ env.VARIABLE_NAME }}
       - name: Use a Secret
