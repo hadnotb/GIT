@@ -19,4 +19,6 @@ jobs:
           extensions: imagick, swoole
       - name: install composer dep
         run: composer install
+      - name: display variable
+        run: echo ${{ env.VARIABLE_NAME }}
       
